@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module" async src="./js/app.js" defer></script>
+    <style>
+        #canvas_container {
+            position: relative;
+        }
+        canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: transparent;
+        }
+        body > div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Jogo das 8 rainhas ou damas</h2>
+        <p>Você deve posicionar 8 rainhas (ou damas) no tabuleiro de modo que nenhuma possa 'comer' a outra</p>
+        <h3>Como jogar:</h3>
+        <h4>Clique esquedo do mouse coloca ou retira uma rainha (ou dama) na posição clicada</h4>
+        <button id='complete_button'>Cansei completa pra mim!</button>
+    </div>
+    <div id="canvas_container"></div>
+    
+</body>
+</html>
