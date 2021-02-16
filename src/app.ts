@@ -15,7 +15,7 @@ window.onload = async () => {
     });
     chessboard.render()
 
-    const queenImage = await Util.loadAsyncImage('/public/imagens/queen.png');
+    const queenImage = await Util.loadAsyncImage('/imagens/queen.png');
 
     const queenSize = 600/8;
 

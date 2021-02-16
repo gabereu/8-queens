@@ -11,7 +11,7 @@ window.onload = async () => {
         size: 600
     });
     chessboard.render();
-    const queenImage = await Util.loadAsyncImage('/public/imagens/queen.png');
+    const queenImage = await Util.loadAsyncImage('/imagens/queen.png');
     const queenSize = 600 / 8;
     const queen = new Queen(queenImage, queenSize);
     const [dropLayerCanvas, dropLayerContext] = Util.createCanvas();
