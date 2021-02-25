@@ -38,13 +38,13 @@ class Queen implements DrawnableObject {
         let dx = x;
         let dy = y;
 
-        for(dx = 0; dx < x_size; dx++){
+        for(dx = 0; dx < x_size; ++dx){
             if(dx != x){
                 dominated.push([dx, y]);
             }
         }
 
-        for(dy = 0; dy < y_size; dy++){
+        for(dy = 0; dy < y_size; ++dy){
             if(dy != y){
                 dominated.push([x, dy]);
             }
@@ -54,7 +54,7 @@ class Queen implements DrawnableObject {
         let left_x = x - min_left;
         let left_y = y - min_left;
 
-        while(left_x < x_size && left_y < x_size){
+        while(left_x < x_size && left_y < y_size){
             if( left_x !== x && left_y !== y ){
                 dominated.push([left_x, left_y]);
             }
@@ -62,7 +62,7 @@ class Queen implements DrawnableObject {
             left_y++;
         }
         
-        let min_right = Math.min(x_size - x, y);
+        let min_right = Math.min(x_size - 1 - x, y);
         let right_x = x + min_right;
         let right_y = y - min_right;
 

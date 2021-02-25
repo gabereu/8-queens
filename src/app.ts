@@ -60,5 +60,10 @@ window.onload = async () => {
         if(!completed){
             alert('Vish... Não da não em');
         }
-    })
+    });
+
+    const clearButton = document.querySelector<HTMLButtonElement>('#clear_button');
+    clearButton?.addEventListener('click', () => {
+        queensGrid.clear();
+    });
 }

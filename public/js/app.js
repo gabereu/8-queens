@@ -39,4 +39,8 @@ window.onload = async () => {
             alert('Vish... Não da não em');
         }
     });
+    const clearButton = document.querySelector('#clear_button');
+    clearButton === null || clearButton === void 0 ? void 0 : clearButton.addEventListener('click', () => {
+        queensGrid.clear();
+    });
 };

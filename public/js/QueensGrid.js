@@ -63,6 +63,10 @@ class QueensGrid {
     }
     tryToComplete() {
         const queensQuantity = this.queenCount;
+        if (queensQuantity === 8) {
+            alert('Já tá completo!');
+            return true;
+        }
         const virtualGrid = this.getVirtualGrid();
         const complete = this.tryPositionNewQueen(queensQuantity, virtualGrid);
         if (complete) {
@@ -113,6 +117,14 @@ class QueensGrid {
             }
         }
         return virtualgrid;
+    }
+    clear() {
+        for (const [line_number, line] of this.grid.entries()) {
+            for (const column of line.keys()) {
+                this.grid[line_number][column] = 'empty';
+            }
+        }
+        this.queenCount = 0;
     }
 }
 export default QueensGrid;

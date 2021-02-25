@@ -83,6 +83,12 @@ class QueensGrid implements DrawnableObject {
 
     public tryToComplete(){
         const queensQuantity = this.queenCount;
+
+        if(queensQuantity === 8){
+            alert('Já tá completo!');
+            return true;
+        }
+
         const virtualGrid = this.getVirtualGrid();
 
         const complete = this.tryPositionNewQueen(queensQuantity, virtualGrid);
@@ -141,6 +147,15 @@ class QueensGrid implements DrawnableObject {
         }
 
         return virtualgrid;
+    }
+
+    public clear(){
+        for (const [line_number, line] of this.grid.entries()) {
+            for (const column of line.keys()) {
+                this.grid[line_number][column] = 'empty';
+            }
+        }
+        this.queenCount = 0;
     }
     
 }
