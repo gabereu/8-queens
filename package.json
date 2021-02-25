@@ -2,11 +2,10 @@
   "name": "8rainhas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "server": "http-server ./public -c-1",
-    "watch": "tsc -w"
+    "dev": "tsc -w"
   },
   "keywords": [],
   "author": "",
