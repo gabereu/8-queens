@@ -26,7 +26,7 @@
 
 observação: com o projeto já compilado (existência de arquivos .js na pasta /public/js), é possível utilizar qualquer servidor http servindo a pasta /public como raiz (ou caminho /).
 
-### Jogo criado para trabalho da disciplina de Inteligência Artificial do curso de Ciência da Computação da UFCAT
+### Jogo desenvolvido para trabalho da disciplina de Inteligência Artificial do curso de Ciência da Computação da UFCAT
 
 ### Alunos:
 
